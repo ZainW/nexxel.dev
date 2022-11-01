@@ -10,6 +10,9 @@ import { remarkReadingTime } from "./src/utils/reading-time.mjs";
 // import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
+import vercel from "@astrojs/vercel/serverless";
+
+// https://astro.build/config
 export default defineConfig({
   site: "https://www.nexxel.dev",
   markdown: {
@@ -20,5 +23,7 @@ export default defineConfig({
       theme: "vitesse-dark"
     }
   },
-  integrations: [mdx(), sitemap(), tailwind(), react()]
+  integrations: [mdx(), sitemap(), tailwind(), react()],
+  output: "server",
+  adapter: vercel()
 });
