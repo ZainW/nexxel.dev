@@ -20,11 +20,8 @@ type PinnedRepo = {
   forks: string;
 };
 
-const pinnedRepos = await fetch(
-  "https://gh-pinned.nxl.sh/api/user/nexxeln"
-).then(async (response) => {
-  return (await response.json()) as PinnedRepo[];
-});
+const response = await fetch("https://gh-pinned.nxl.sh/api/user/nexxeln");
+const pinnedRepos = (await response.json()) as PinnedRepo[];
 ---
 
 <!DOCTYPE html>
