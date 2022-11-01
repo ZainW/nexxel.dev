@@ -29,7 +29,9 @@ const pinnedRepos = (await response.json()) as PinnedRepo[];
   <head>
     <BaseHead title={`${SITE_TITLE} home`} description={SITE_DESCRIPTION} />
   </head>
-  <body>
+  <body
+    class="m-auto p-5 max-w-[65ch] text-left bg-neutral-900 break-words leading-6 text-neutral-100 antialiased"
+  >
     <Header title={SITE_TITLE} />
     <main class="text-lg text-neutral-200">
       <h1 class="text-4xl pb-2">Hi, I'm nexxel</h1>
