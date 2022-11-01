@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "Satoshi";
   src: url("/fonts/Satoshi-Black.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -16,7 +16,7 @@
     url("/fonts/Satoshi-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -25,7 +25,7 @@
     url("/fonts/Satoshi-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -34,8 +34,8 @@
     url("/fonts/Satoshi-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
-}
+  font-display: auto;
+} */
 
 @font-face {
   font-family: "Hack";
@@ -49,7 +49,7 @@ html {
 }
 
 body {
-  @apply font-satoshi m-auto p-5 max-w-[65ch] text-left bg-neutral-900 break-words leading-6 text-neutral-100 antialiased;
+  @apply m-auto p-5 max-w-[65ch] text-left bg-neutral-900 break-words leading-6 text-neutral-100 antialiased;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   word-wrap: break-word;
