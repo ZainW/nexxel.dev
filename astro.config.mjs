@@ -7,7 +7,7 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { remarkReadingTime } from "./src/utils/reading-time.mjs";
 
 // https://astro.build/config
-import prefetch from "@astrojs/prefetch";
+// import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
 export default defineConfig({
@@ -20,5 +20,5 @@ export default defineConfig({
       theme: "vitesse-dark"
     }
   },
-  integrations: [mdx(), sitemap(), tailwind(), react(), prefetch()]
+  integrations: [mdx(), sitemap(), tailwind(), react()]
 });
